@@ -4,8 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "scriptdev": "PORT=3000 NODE_ENV=dev nodemon index.js",
+    "scriptprod": "PORT=5002 NODE_ENV=product nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql-server": "^1.0.5",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.5"
+  }
 }
